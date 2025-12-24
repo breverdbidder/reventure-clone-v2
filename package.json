@@ -1,0 +1,42 @@
+{
+  "name": "reventure-clone-v2",
+  "version": "2.0.0",
+  "description": "Reventure.app reverse engineering and clone with Zillow data integration",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "orchestrate": "node scripts/orchestrator.js",
+    "clone": "node scripts/cloning_agent.js",
+    "reverse-engineer": "node scripts/reverse_engineer.js",
+    "fetch-zillow": "node scripts/fetch_zillow_data.js",
+    "load-data": "node scripts/load_all_data.js",
+    "api-discovery": "node scripts/api_discovery.js",
+    "setup-db": "node scripts/setup_database.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.89.0",
+    "axios": "^1.13.2",
+    "cheerio": "^1.0.0-rc.12",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "lucide-react": "^0.294.0",
+    "mapbox-gl": "^3.0.1",
+    "papaparse": "^5.4.1",
+    "playwright": "^1.57.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-map-gl": "^7.1.7",
+    "recharts": "^2.15.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "vite": "^5.0.8"
+  }
+}
